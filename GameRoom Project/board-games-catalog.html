@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Board-Games-Catalog - Game Room Fiu</title>
+    <meta property="og:title" content="Board-Games-Catalog - Game Room Fiu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./board-games-catalog.css" rel="stylesheet" />
+
+      <div class="board-games-catalog-container">
+        <div class="board-games-catalog-header">
+          <header
+            data-thq="thq-navbar"
+            class="board-games-catalog-navbar-interactive"
+          >
+            <a href="index.html" class="board-games-catalog-logo">
+              fiu game room&nbsp;
+            </a>
+            <div
+              data-thq="thq-navbar-nav"
+              class="board-games-catalog-desktop-menu"
+            >
+              <nav class="board-games-catalog-links">
+                <a href="ps5-catalog.html">PS5 List</a>
+                <a href="xbox-catalog.html" class="board-games-catalog-nav2">
+                  Xbox List
+                </a>
+                <a
+                  href="nintendo-catalog.html"
+                  class="board-games-catalog-nav3"
+                >
+                  Switch List
+                </a>
+                <a
+                  href="board-games-catalog.html"
+                  class="board-games-catalog-nav4"
+                >
+                  <span>Board</span>
+                  <span>Game</span>
+                  <span></span>
+                  <span>List</span>
+                </a>
+                <a
+                  href="physical-games-catalog.html"
+                  class="board-games-catalog-nav5"
+                >
+                  Active Game List
+                </a>
+              </nav>
+              <div class="board-games-catalog-buttons"></div>
+            </div>
+            <div
+              data-thq="thq-burger-menu"
+              class="board-games-catalog-burger-menu"
+            >
+              <svg viewBox="0 0 1024 1024" class="board-games-catalog-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              data-thq="thq-mobile-menu"
+              class="board-games-catalog-mobile-menu"
+            >
+              <div class="board-games-catalog-nav">
+                <div class="board-games-catalog-top">
+                  <span class="board-games-catalog-logo1">GAMERZ</span>
+                  <div
+                    data-thq="thq-close-menu"
+                    class="board-games-catalog-close-menu"
+                  >
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="board-games-catalog-icon02"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="board-games-catalog-links1">
+                  <span class="board-games-catalog-nav11">PS5 List</span>
+                  <span class="board-games-catalog-nav21">Xbox List</span>
+                  <span class="board-games-catalog-nav31">Switch List</span>
+                  <span class="board-games-catalog-nav41">Board Game List</span>
+                  <span class="board-games-catalog-nav51">
+                    Active Game List
+                  </span>
+                </nav>
+                <div class="board-games-catalog-buttons1">
+                  <button class="board-games-catalog-login button">
+                    Login
+                  </button>
+                  <button class="board-games-catalog-register button">
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div>
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="board-games-catalog-icon04"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="board-games-catalog-icon06"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="board-games-catalog-icon08"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="board-games-catalog-hero">
+          <div class="board-games-catalog-hero1">
+            <div class="board-games-catalog-container1"></div>
+          </div>
+        </div>
+        <div class="board-games-catalog-features">
+          <h1 class="board-games-catalog-slogan">
+            Game On: Your Portal to Board Game Bliss at the FIU Game Room!
+          </h1>
+          <div class="board-games-catalog-game-list">
+            <div class="board-games-catalog-sorry">
+              <h2 class="board-games-catalog-text004">Sorry</h2>
+              <img
+                alt="image"
+                src="public/001669716-1-300w.jpg"
+                class="board-games-catalog-image"
+              />
+              <span class="board-games-catalog-text005">
+                <span>Age Rating: 6 and up</span>
+                <br class="board-games-catalog-text007" />
+                <br class="board-games-catalog-text008" />
+                <span>
+                  Description: A classic board game of chance, strategy, and
+                  luck where players aim to move their four pawns from start to
+                  home before their opponents do.
+                </span>
+                <br class="board-games-catalog-text010" />
+                <br class="board-games-catalog-text011" />
+                <span>Genre: Family/Strategy</span>
+                <br class="board-games-catalog-text013" />
+                <br class="board-games-catalog-text014" />
+                <span>Max Number of Players: 4</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-trouble">
+              <h2 class="board-games-catalog-text016">Trouble!</h2>
+              <img
+                alt="image"
+                src="public/814zr%2Bnhvol._sl1500___34974-300h.jpg"
+                class="board-games-catalog-image1"
+              />
+              <span class="board-games-catalog-text017">
+                <span>Age Rating: 5 and up</span>
+                <br class="board-games-catalog-text019" />
+                <br class="board-games-catalog-text020" />
+                <span>
+                  Description: Known for its iconic Pop-O-Matic die container,
+                  this is a simple race-to-the-finish game where players aim to
+                  get all their game pieces around the board first.
+                </span>
+                <br class="board-games-catalog-text022" />
+                <br class="board-games-catalog-text023" />
+                <span>Genre: Family/Strategy</span>
+                <br class="board-games-catalog-text025" />
+                <br class="board-games-catalog-text026" />
+                <span>Max Number of Players: 4</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-checkers">
+              <h2 class="board-games-catalog-text028">Checkers</h2>
+              <img
+                alt="image"
+                src="public/91cnv-kgoll._ac_uf894%2C1000_ql80_-300w.jpg"
+                class="board-games-catalog-image2"
+              />
+              <span class="board-games-catalog-text029">
+                <span>Age Rating: 6 and up</span>
+                <br class="board-games-catalog-text031" />
+                <br class="board-games-catalog-text032" />
+                <span>
+                  Description: A classic two-player strategy game that involves
+                  diagonal moves of uniform game pieces and mandatory captures
+                  by jumping over opponent pieces.
+                </span>
+                <br class="board-games-catalog-text034" />
+                <br class="board-games-catalog-text035" />
+                <span>Genre: Abstract Strategy</span>
+                <br class="board-games-catalog-text037" />
+                <br class="board-games-catalog-text038" />
+                <span>Max Number of Players: 2</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-chess">
+              <h2 class="board-games-catalog-text040">Chess</h2>
+              <img
+                alt="image"
+                src="public/91hp6hh0jdl._sl1500_-300h.jpg"
+                class="board-games-catalog-image3"
+              />
+              <span class="board-games-catalog-text041">
+                <span>Age Rating: 6 and up</span>
+                <br class="board-games-catalog-text043" />
+                <br class="board-games-catalog-text044" />
+                <span>
+                  Description: A highly strategic and skillful board game with
+                  16 pieces each for two players, each piece having its unique
+                  movement pattern. The objective is to checkmate the opponent's
+                  king.
+                </span>
+                <br class="board-games-catalog-text046" />
+                <br class="board-games-catalog-text047" />
+                <span>Genre: Abstract Strategy</span>
+                <br class="board-games-catalog-text049" />
+                <br class="board-games-catalog-text050" />
+                <span>Max Number of Players: 2</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-battleship">
+              <h2 class="board-games-catalog-text052">Battleship</h2>
+              <img
+                alt="image"
+                src="public/battleship-classic-board-game-strategy-game-ages-7-and-up-for-2-players_c6671817-39be-451b-a73b-f3462c6db844.5e01de4f6c352c381f05e9c83cc7d556-300h.webp"
+                class="board-games-catalog-image4"
+              />
+              <span class="board-games-catalog-text053">
+                <span>Age Rating: 7 and up</span>
+                <br class="board-games-catalog-text055" />
+                <br class="board-games-catalog-text056" />
+                <span>
+                  Description: A guessing game for two players where each player
+                  tries to sink the other's hidden ships by guessing their
+                  coordinates on a grid.
+                </span>
+                <br class="board-games-catalog-text058" />
+                <br class="board-games-catalog-text059" />
+                <span>Genre: Strategy</span>
+                <br class="board-games-catalog-text061" />
+                <br class="board-games-catalog-text062" />
+                <span>Max Number of Players: 2</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-clue">
+              <h2 class="board-games-catalog-text064">Clue</h2>
+              <img
+                alt="image"
+                src="public/clue-box-art-300w.jpg"
+                class="board-games-catalog-image5"
+              />
+              <span class="board-games-catalog-text065">
+                <span>Age Rating: 8 and up</span>
+                <br class="board-games-catalog-text067" />
+                <br class="board-games-catalog-text068" />
+                <span>
+                  Description: A murder mystery game where players move around a
+                  board representing the rooms of a mansion to solve the mystery
+                  of who committed the murder, with what weapon, and in which
+                  room.
+                </span>
+                <br class="board-games-catalog-text070" />
+                <br class="board-games-catalog-text071" />
+                <span>Genre: Mystery/Deduction</span>
+                <br class="board-games-catalog-text073" />
+                <br class="board-games-catalog-text074" />
+                <span>Max Number of Players: 6</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-poker">
+              <h2 class="board-games-catalog-text076">Poker</h2>
+              <img
+                alt="image"
+                src="public/img_20190801_180252-300h.webp"
+                class="board-games-catalog-image6"
+              />
+              <span class="board-games-catalog-text077">
+                <span>Age Rating: 18 and up</span>
+                <br class="board-games-catalog-text079" />
+                <br class="board-games-catalog-text080" />
+                <span>
+                  Description: A family of card games that combines gambling,
+                  strategy, and skill. The winner of each hand is determined
+                  according to the combinations of players' cards.
+                </span>
+                <br class="board-games-catalog-text082" />
+                <br class="board-games-catalog-text083" />
+                <span>Genre: Card Game/Gambling</span>
+                <br class="board-games-catalog-text085" />
+                <br class="board-games-catalog-text086" />
+                <span>Max Number of Players: Varies, but typically 2-10</span>
+              </span>
+            </div>
+            <div class="board-games-catalog-guess-who">
+              <h2 class="board-games-catalog-text088">Guess Who</h2>
+              <img
+                alt="image"
+                src="public/wnmv1191-300h.jpg"
+                class="board-games-catalog-image7"
+              />
+              <span class="board-games-catalog-text089">
+                <span>Age Rating: 6 and up</span>
+                <br class="board-games-catalog-text091" />
+                <br class="board-games-catalog-text092" />
+                <span>
+                  Description: A two-player character guessing game where
+                  players use yes or no questions to guess the opponent's
+                  mystery character.
+                </span>
+                <br class="board-games-catalog-text094" />
+                <br class="board-games-catalog-text095" />
+                <span>Genre: Family/Deduction</span>
+                <br class="board-games-catalog-text097" />
+                <br class="board-games-catalog-text098" />
+                <span>Max Number of Players: 2</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="board-games-catalog-footer">
+          <footer class="board-games-catalog-footer1">
+            <div class="board-games-catalog-container2">
+              <span class="board-games-catalog-logo2">FIU Game Room</span>
+              <nav class="board-games-catalog-nav1">
+                <span class="board-games-catalog-nav12">PS5 List</span>
+                <span class="board-games-catalog-nav22">Xbox List</span>
+                <span class="board-games-catalog-nav32">Switch List</span>
+                <span class="board-games-catalog-nav42">Board Game List</span>
+                <span class="board-games-catalog-nav52">Active Game List</span>
+              </nav>
+            </div>
+            <div class="board-games-catalog-separator"></div>
+            <div class="board-games-catalog-container3">
+              <div class="board-games-catalog-icon-group1">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="board-games-catalog-icon10"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="board-games-catalog-icon12"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="board-games-catalog-icon14"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

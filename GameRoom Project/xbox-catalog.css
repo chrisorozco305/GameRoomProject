@@ -1,0 +1,984 @@
+.xbox-catalog-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.xbox-catalog-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  background-color: var(--dl-color-primary1-blue80);
+}
+.xbox-catalog-navbar-interactive {
+  width: 90%;
+  display: flex;
+  position: sticky;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-threeunits);
+  border-radius: 50px;
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  justify-content: space-between;
+  background-color: var(--dl-color-gray-white);
+}
+.xbox-catalog-logo {
+  font-size: 2em;
+  font-family: "Lato";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.xbox-catalog-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.xbox-catalog-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.xbox-catalog-nav1 {
+  font-size: 22px;
+  transition: 0.3s;
+  font-weight: 700;
+  text-decoration: none;
+}
+.xbox-catalog-nav1:hover {
+  color: #3d6e70ff;
+}
+.xbox-catalog-nav2 {
+  font-size: 22px;
+  transition: 0.3s;
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.xbox-catalog-nav2:hover {
+  color: #3d6e70ff;
+}
+.xbox-catalog-nav3 {
+  font-size: 22px;
+  transition: 0.3s;
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.xbox-catalog-nav3:hover {
+  color: #3d6e70ff;
+}
+.xbox-catalog-nav4 {
+  font-size: 22px;
+  transition: 0.3s;
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.xbox-catalog-nav4:hover {
+  color: #3d6e70ff;
+}
+.xbox-catalog-nav5 {
+  font-size: 22px;
+  transition: 0.3s;
+  font-weight: 700;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.xbox-catalog-nav5:hover {
+  color: #3d6e70ff;
+}
+.xbox-catalog-buttons {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xbox-catalog-burger-menu {
+  display: none;
+}
+.xbox-catalog-icon {
+  width: var(--dl-size-size-xsmall);
+  cursor: pointer;
+  height: var(--dl-size-size-xsmall);
+}
+.xbox-catalog-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  border-radius: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--dl-color-gray-white);
+}
+.xbox-catalog-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.xbox-catalog-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.xbox-catalog-logo1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.xbox-catalog-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.xbox-catalog-icon02 {
+  fill: var(--dl-color-gray-900);
+  width: var(--dl-size-size-xsmall);
+  cursor: pointer;
+  height: var(--dl-size-size-xsmall);
+}
+.xbox-catalog-links1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.xbox-catalog-nav11 {
+  color: var(--dl-color-gray-black);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav21 {
+  color: var(--dl-color-gray-black);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav31 {
+  color: var(--dl-color-gray-black);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav41 {
+  color: var(--dl-color-gray-black);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav51 {
+  color: var(--dl-color-gray-black);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.xbox-catalog-buttons1 {
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xbox-catalog-login {
+  border-color: var(--dl-color-primary1-blue100);
+  border-width: 1px;
+  margin-right: var(--dl-space-space-twounits);
+  padding-left: 1.5rem;
+  border-radius: 30px;
+  padding-right: 1.5rem;
+}
+.xbox-catalog-register {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  border-color: var(--dl-color-primary1-blue100);
+  border-width: 1px;
+  padding-left: 1.5rem;
+  border-radius: 30px;
+  padding-right: 1.5rem;
+  background-color: var(--dl-color-primary1-blue100);
+}
+.xbox-catalog-register:hover {
+  border-color: #849492ff;
+  background-color: #849492ff;
+}
+.xbox-catalog-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.xbox-catalog-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.xbox-catalog-icon08 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.xbox-catalog-hero {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("public/figoeisviaazefx-1500w.jpg");
+}
+.xbox-catalog-hero1 {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: auto;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+  justify-content: center;
+}
+.xbox-catalog-container1 {
+  gap: var(--dl-space-space-twounits);
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-features {
+  width: 100%;
+  height: 1543px;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  flex-direction: column;
+}
+.xbox-catalog-text004 {
+  font-size: 3rem;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.xbox-catalog-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-space-space-twounits);
+  position: relative;
+  align-items: flex-start;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.xbox-catalog-feature-card {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text005 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text006 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text007 {
+  font-weight: 700;
+}
+.xbox-catalog-text011 {
+  font-weight: 700;
+}
+.xbox-catalog-text015 {
+  font-weight: 700;
+}
+.xbox-catalog-text019 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card1 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card1:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text021 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image1 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text022 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text023 {
+  font-weight: 700;
+}
+.xbox-catalog-text027 {
+  font-weight: 700;
+}
+.xbox-catalog-text031 {
+  font-weight: 700;
+}
+.xbox-catalog-text035 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card2 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  padding-top: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card2:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text037 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image2 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text038 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text039 {
+  font-weight: 700;
+}
+.xbox-catalog-text043 {
+  font-weight: 700;
+}
+.xbox-catalog-text047 {
+  font-weight: 700;
+}
+.xbox-catalog-text051 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card3 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card3:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text053 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image3 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text054 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text055 {
+  font-weight: 700;
+}
+.xbox-catalog-text057 {
+  font-weight: 700;
+}
+.xbox-catalog-text058 {
+  font-weight: 700;
+}
+.xbox-catalog-text059 {
+  font-weight: 700;
+}
+.xbox-catalog-text061 {
+  font-weight: 700;
+}
+.xbox-catalog-text062 {
+  font-weight: 700;
+}
+.xbox-catalog-text063 {
+  font-weight: 700;
+}
+.xbox-catalog-text065 {
+  font-weight: 700;
+}
+.xbox-catalog-text066 {
+  font-weight: 700;
+}
+.xbox-catalog-text067 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card4 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card4:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text069 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image4 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text070 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text071 {
+  font-weight: 700;
+}
+.xbox-catalog-text073 {
+  font-weight: 700;
+}
+.xbox-catalog-text074 {
+  font-weight: 700;
+}
+.xbox-catalog-text075 {
+  font-weight: 700;
+}
+.xbox-catalog-text077 {
+  font-weight: 700;
+}
+.xbox-catalog-text078 {
+  font-weight: 700;
+}
+.xbox-catalog-text079 {
+  font-weight: 700;
+}
+.xbox-catalog-text081 {
+  font-weight: 700;
+}
+.xbox-catalog-text082 {
+  font-weight: 700;
+}
+.xbox-catalog-text083 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card5 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card5:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text085 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image5 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text086 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text087 {
+  font-weight: 700;
+}
+.xbox-catalog-text089 {
+  font-weight: 700;
+}
+.xbox-catalog-text090 {
+  font-weight: 700;
+}
+.xbox-catalog-text091 {
+  font-weight: 700;
+}
+.xbox-catalog-text093 {
+  font-weight: 700;
+}
+.xbox-catalog-text094 {
+  font-weight: 700;
+}
+.xbox-catalog-text095 {
+  font-weight: 700;
+}
+.xbox-catalog-text097 {
+  font-weight: 700;
+}
+.xbox-catalog-text098 {
+  font-weight: 700;
+}
+.xbox-catalog-text099 {
+  font-weight: 700;
+}
+.xbox-catalog-text101 {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.xbox-catalog-text102 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card6 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card6:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text103 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image6 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text104 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text105 {
+  font-weight: 700;
+}
+.xbox-catalog-text107 {
+  font-weight: 700;
+}
+.xbox-catalog-text108 {
+  font-weight: 700;
+}
+.xbox-catalog-text109 {
+  font-weight: 700;
+}
+.xbox-catalog-text111 {
+  font-weight: 700;
+}
+.xbox-catalog-text112 {
+  font-weight: 700;
+}
+.xbox-catalog-text113 {
+  font-weight: 700;
+}
+.xbox-catalog-text115 {
+  font-weight: 700;
+}
+.xbox-catalog-text116 {
+  font-weight: 700;
+}
+.xbox-catalog-text117 {
+  font-weight: 700;
+}
+.xbox-catalog-feature-card7 {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-feature-card7:hover {
+  transform: scale(1.02);
+}
+.xbox-catalog-text119 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.xbox-catalog-image7 {
+  width: 212px;
+  height: 279px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.xbox-catalog-text120 {
+  width: 212px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  text-transform: capitalize;
+}
+.xbox-catalog-text121 {
+  font-weight: 700;
+}
+.xbox-catalog-text123 {
+  font-weight: 700;
+}
+.xbox-catalog-text124 {
+  font-weight: 700;
+}
+.xbox-catalog-text125 {
+  font-weight: 700;
+}
+.xbox-catalog-text127 {
+  font-weight: 700;
+}
+.xbox-catalog-text128 {
+  font-weight: 700;
+}
+.xbox-catalog-text129 {
+  font-weight: 700;
+}
+.xbox-catalog-text131 {
+  font-weight: 700;
+}
+.xbox-catalog-text132 {
+  font-weight: 700;
+}
+.xbox-catalog-text133 {
+  font-weight: 700;
+}
+.xbox-catalog-footer {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dl-color-gray-black);
+}
+.xbox-catalog-footer1 {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
+  justify-content: space-between;
+}
+.xbox-catalog-container3 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xbox-catalog-logo2 {
+  color: var(--dl-color-gray-white);
+  font-size: 2em;
+  font-weight: bold;
+}
+.xbox-catalog-nav1 {
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  flex-direction: row;
+}
+.xbox-catalog-nav12 {
+  color: var(--dl-color-secondary-gray500);
+  margin-left: 0px;
+}
+.xbox-catalog-nav22 {
+  color: var(--dl-color-secondary-gray500);
+  margin-left: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav32 {
+  color: var(--dl-color-secondary-gray500);
+  margin-left: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav42 {
+  color: var(--dl-color-secondary-gray500);
+  margin-left: var(--dl-space-space-unit);
+}
+.xbox-catalog-nav52 {
+  color: var(--dl-color-secondary-gray500);
+  margin-left: var(--dl-space-space-unit);
+}
+.xbox-catalog-separator {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  margin-left: 0px;
+  border-color: var(--dl-color-gray-800);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 0px;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.xbox-catalog-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xbox-catalog-icon-group1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xbox-catalog-icon10 {
+  fill: var(--dl-color-secondary-gray500);
+  width: 24px;
+  height: 24px;
+  margin-right: var(--dl-space-space-twounits);
+}
+.xbox-catalog-icon12 {
+  fill: var(--dl-color-secondary-gray500);
+  width: 24px;
+  height: 24px;
+  margin-right: var(--dl-space-space-twounits);
+}
+.xbox-catalog-icon14 {
+  fill: var(--dl-color-secondary-gray500);
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 991px) {
+  .xbox-catalog-hero1 {
+    flex-direction: column;
+  }
+  .xbox-catalog-container1 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-right: 0px;
+  }
+  .xbox-catalog-text004 {
+    align-self: center;
+  }
+  .xbox-catalog-container2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 767px) {
+  .xbox-catalog-navbar-interactive {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .xbox-catalog-desktop-menu {
+    display: none;
+  }
+  .xbox-catalog-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .xbox-catalog-mobile-menu {
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .xbox-catalog-nav11 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-nav21 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-nav31 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-nav41 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-nav51 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-hero1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .xbox-catalog-features {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .xbox-catalog-footer1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .xbox-catalog-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .xbox-catalog-container4 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media(max-width: 479px) {
+  .xbox-catalog-navbar-interactive {
+    width: 90%;
+    padding: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-logo {
+    font-size: 1.5em;
+  }
+  .xbox-catalog-mobile-menu {
+    padding: 16px;
+  }
+  .xbox-catalog-logo1 {
+    font-size: 1.5em;
+  }
+  .xbox-catalog-icon02 {
+    fill: var(--dl-color-gray-900);
+  }
+  .xbox-catalog-hero1 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .xbox-catalog-container1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-features {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .xbox-catalog-container2 {
+    grid-gap: var(--dl-space-space-halfunit);
+  }
+  .xbox-catalog-footer1 {
+    padding: var(--dl-space-space-unit);
+  }
+  .xbox-catalog-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .xbox-catalog-container4 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

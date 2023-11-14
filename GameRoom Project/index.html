@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game Room Fiu</title>
+    <meta property="og:title" content="Game Room Fiu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-header">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <a href="index.html" class="home-logo">fiu game room&nbsp;</a>
+            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+              <nav class="home-links">
+                <a href="ps5-catalog.html">PS5 List</a>
+                <a href="xbox-catalog.html" class="home-nav2">Xbox List</a>
+                <a href="nintendo-catalog.html" class="home-nav3">
+                  Switch List
+                </a>
+                <a href="board-games-catalog.html" class="home-nav4">
+                  <span>Board</span>
+                  <span>Game</span>
+                  <span></span>
+                  <span>List</span>
+                </a>
+                <a href="physical-games-catalog.html" class="home-nav5">
+                  Active Game List
+                </a>
+              </nav>
+              <div class="home-buttons"></div>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div class="home-nav">
+                <div class="home-top">
+                  <span class="home-logo1">GAMERZ</span>
+                  <div data-thq="thq-close-menu" class="home-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="home-links1">
+                  <span class="home-nav11">PS5 List</span>
+                  <span class="home-nav21">Xbox List</span>
+                  <span class="home-nav31">Switch List</span>
+                  <span class="home-nav41">Board Game List</span>
+                  <span class="home-nav51">Active Game List</span>
+                </nav>
+                <div class="home-buttons1">
+                  <button class="home-login button">Login</button>
+                  <button class="home-register button">Register</button>
+                </div>
+              </div>
+              <div>
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="home-hero">
+          <div class="home-hero1">
+            <h1 class="home-hero-heading heading1">
+              Welcome to the Panthers Game Room!
+            </h1>
+            <div class="home-container01">
+              <div class="home-btn-group"></div>
+            </div>
+            <span class="home-hero-sub-heading">
+              Unleash Your Game - Study Hard, Play Harder!
+            </span>
+          </div>
+        </div>
+        <div class="home-details">
+          <div class="home-details1">
+            <div class="home-container02">
+              <span class="home-text04 sectionTitle">
+                <span>Details</span>
+                <br />
+              </span>
+              <h2 class="home-details-heading heading2">
+                Press Play on Friendship - Connect, Compete, and Create
+                Memories!
+              </h2>
+              <span class="home-details-sub-heading">
+                Create a community and engage with fellow gamers from around the
+                globe. Share your favorite games, reviews, and tips.
+              </span>
+            </div>
+            <img
+              alt="image"
+              src="public/New Folder/52621837104_4b2361dbd2_o-400w.jpg"
+              class="home-details-image"
+            />
+          </div>
+        </div>
+        <div class="home-features">
+          <div class="home-features-container">
+            <div class="home-features1">
+              <div class="home-container03">
+                <span class="home-text07 sectionTitle">
+                  <span>features</span>
+                  <br />
+                </span>
+                <h2 class="home-features-heading heading2">
+                  Explore our facilities.
+                </h2>
+                <span class="home-features-sub-heading">
+                  Unlock a world of play—discover our game room's free access to
+                  endless games and top-tier entertainment with your FIU One
+                  Card!
+                </span>
+              </div>
+              <div class="home-container04">
+                <div class="home-feature-card">
+                  <div class="home-container05">
+                    <h3 class="home-text10 heading3">
+                      An Unmatched Gaming Experience
+                    </h3>
+                    <span class="home-text11">
+                      Discover our game room, boasting the latest PS5, Xbox
+                      Series X, and Switch consoles, and a vast video game
+                      library for an unmatched gaming experience.
+                    </span>
+                  </div>
+                </div>
+                <div class="home-feature-card1">
+                  <div class="home-container06">
+                    <h3 class="home-text12 heading3">
+                      Board Games, Card Games, and More!
+                    </h3>
+                    <span class="home-text13">
+                      Step into a realm of strategy and fun, where a treasure
+                      trove of card and board games beckons enthusiasts to
+                      shuffle, roll, and play through an endless array of
+                      choices. Adventure, intrigue, and laughter await at every
+                      table!
+                    </span>
+                  </div>
+                </div>
+                <div class="home-feature-card2">
+                  <div class="home-container07">
+                    <h3 class="home-text14 heading3">
+                      Pool, Ping Pong, Where Does It End?!
+                    </h3>
+                    <span class="home-text15">
+                      Rack up the excitement in our game room featuring premium
+                      Ping Pong and Pool Tables, perfect for casual plays or
+                      competitive clashes. Join the thrill with our monthly
+                      tournaments, where every shot promises to be a showcase of
+                      skill and camaraderie.
+                    </span>
+                  </div>
+                </div>
+                <div class="home-feature-card3">
+                  <div class="home-container08">
+                    <h3 class="home-text16 heading3">Wanna Host An Event?</h3>
+                    <span class="home-text17">
+                      Elevate your club and school events by hosting them in our
+                      dynamic game room space, where camaraderie and competition
+                      ignite unforgettable experiences. It's the perfect
+                      backdrop for organizations to bond, celebrate, and create
+                      lasting memories.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-gallery">
+          <div class="home-gallery1">
+            <h1 class="home-gallery-heading heading2">Featured Games</h1>
+            <span class="home-gallery-sub-heading">
+              Check out some of the popular games on our website
+            </span>
+            <div class="home-container09">
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/10f8e9dd1f295661c067eaec670e5e23-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name1"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/199623c6583e76576b861cfdca19da65-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name3"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/1da7a36a85c76e61359c7480e925ff33-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name2"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/33d7295be8cd182b9b1b9793ba027a38-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name4"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/5ffe7cf2d5b15b6f88b22275e931d0ac-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name5"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/8d9ab8e22d8536b143157bd811dd7232-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name6"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/c3d98346c4f2e179d13bee7aceebf5e3-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name7"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/e1f483c9f3c872e1972e99f2c2b71535-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name8"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/f58879ceb0b212c2f73395fcd71ad0e4-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name9"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/a0ab815ccc59a35b7fcfcd098c137d3f-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name10"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/dd2b7e436e8fb836c9798e586d45662c-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name11"
+              >
+                <img
+                  alt="image"
+                  src="public/New Folder/e21a5b9c4f83c6fe26e03a9f3115e0ce-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-banner">
+          <div class="home-banner1">
+            <h1 class="home-banner-heading heading2">
+              Discover the Latest Games
+            </h1>
+            <span class="home-banner-sub-heading">
+              Explore the PS5, Xbox, Switch, and Board Game Lists
+            </span>
+          </div>
+        </div>
+        <div class="home-faq">
+          <div class="home-faq-container">
+            <div class="home-faq1">
+              <div class="home-container10">
+                <span class="home-text18 sectionTitle">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="home-text21 heading2">Common questions</h2>
+                <span class="home-text22">
+                  <span>
+                    Here are some of the most common questions that we get.
+                  </span>
+                  <br />
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="home-container11">
+                <div class="home-container12">
+                  <span class="home-text39 heading4">
+                    How much is everything?
+                  </span>
+                  <span class="home-text40">
+                    Our game room welcomes everyone with no entry fee, and
+                    registered students enjoy free rentals across all games and
+                    consoles—just bring your FIU One Card. Faculty and guests
+                    can join in the fun at just $8 an hour for unlimited access
+                    to our top-tier consoles, board games, and game tables.
+                  </span>
+                </div>
+                <div class="home-container13">
+                  <span class="home-text41 heading4">
+                    Can I bring my own controllers/games/consoles?
+                  </span>
+                  <span class="home-text42">
+                    Dive into our fully-stocked game room, where everything you
+                    need for an epic gaming session is at your fingertips, free
+                    of charge. To ensure the fun never stops and all our guests
+                    have equal access to top-notch entertainment, we ask that
+                    personal games, controllers, or systems stay at home. This
+                    policy keeps our community playing together, with a world of
+                    games waiting for you right here. Come play by our rules and
+                    experience gaming at its best!
+                  </span>
+                </div>
+                <div class="home-container14">
+                  <span class="home-text43 heading4">Can I bring guests?</span>
+                  <span class="home-text44">
+                    Step into our vibrant game room, where guests are warmly
+                    welcomed to share in the excitement. Only registered
+                    students, however, hold the key to unlocking our treasure
+                    trove of gaming items for free—simply show your FIU One
+                    Card. Join us for a play, stay for the community, and let's
+                    make every game an inclusive adventure!
+                  </span>
+                </div>
+                <div class="home-container15">
+                  <span class="home-text45 heading4">
+                    How can I host an event?
+                  </span>
+                  <span class="home-text46">
+                    For an impeccably tailored event experience, we invite you
+                    to contact our Event Planning Office with your proposal. Our
+                    dedicated team is on hand to guide you through a
+                    professional planning process, ensuring your event is both
+                    memorable and seamless. Engage with us to bring your
+                    distinguished gathering to life in our game room's dynamic
+                    setting.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-footer">
+          <footer class="home-footer1">
+            <div class="home-container16">
+              <span class="home-logo2">FIU Game Room</span>
+              <nav class="home-nav1">
+                <span class="home-nav12">PS5 List</span>
+                <span class="home-nav22">Xbox List</span>
+                <span class="home-nav32">Switch List</span>
+                <span class="home-nav42">Board Game List</span>
+                <span class="home-nav52">Active Game List</span>
+              </nav>
+            </div>
+            <div class="home-separator"></div>
+            <div class="home-container17">
+              <div class="home-icon-group1">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon10">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon12">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon14">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
